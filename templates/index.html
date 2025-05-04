@@ -2,12 +2,13 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>FURIA Chat</title>
+    <title>DESAFIO FURIA</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
     <div class="container">
-        <header>FÚRIA</header>
+        <header class="furia">FURIA ChatBot</header>
+        <header class="autor">Desenvolvido por: Luigi Del Vecchio</header>
         <main id="chat">
             <div id="mensagens">Fala FURIOSO(A)! Selecione uma pergunta abaixo para a gente começar:</div>
         </main>
@@ -48,8 +49,12 @@
                 })
                 .then(res => res.json())
                 .then(data => {
-                    mensagens.innerHTML += `<div><strong>FURIA Bot:</strong> ${data.resposta}</div>`;
-                });
+                    mensagens.innerHTML += `
+                        <div class="mensagem-bot">
+                            <img src="{{ url_for('static', filename='furialogo.png') }}" alt="Logo FURIA" class="logo-chat">
+                            <strong>FURIA ChatBot:</strong> ${data.resposta}
+                        </div>`;
+                });                
             }
         </script>
     </div>

@@ -12,7 +12,7 @@ def get_furia_valorant_roster():
         if len(nomes_reais) != len(apelidos):
             return "Erro ao extrair dados."
 
-        resposta = "<strong>Roster Atual Valorant FURIA Brasileiro:</strong><br>"
+        resposta = "<strong>Roster Atual de Valorant da FURIA Brasileiro:</strong><br>"
         for nome_real, apelido in zip(nomes_reais, apelidos):
             resposta += f"- {nome_real.text.strip()} (<strong>{apelido.text.strip()}</strong>)<br>"
 
@@ -44,7 +44,7 @@ def get_furia_lol_roster():
         if len(nomes_reais) != len(apelidos):
             return "Erro ao extrair dados."
 
-        resposta = "<strong>Roster Atual League Of Legends FURIA Brasileiro:</strong><br>"
+        resposta = "<strong>Roster Atual de League Of Legends da FURIA Brasileiro:</strong><br>"
         for nome_real, apelido in zip(nomes_reais, apelidos):
             resposta += f"- {nome_real.text.strip()} (<strong>{apelido.text.strip()}</strong>)<br>"
 
@@ -70,7 +70,7 @@ def get_furia_cs_roster():
         if len(nomes_reais) != len(apelidos):
             return "Erro ao extrair dados."
 
-        resposta = "<strong>Roster Atual Counter Strike 2 FURIA Brasileiro:</strong><br>"
+        resposta = "<strong>Roster Atual de Counter Strike 2 da FURIA Brasileiro:</strong><br>"
         for nome_real, apelido in zip(nomes_reais, apelidos):
             resposta += f"- {nome_real.text.strip()} (<strong>{apelido.text.strip()}</strong>)<br>"
 
