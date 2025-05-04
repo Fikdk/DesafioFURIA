@@ -29,7 +29,7 @@ Este projeto é uma solução para o **Desafio de Experiência Conversacional da
 ## Como rodar localmente
 
 ### 1. Clone o repositório:
-git clone https://github.com/seu-usuario/DesafioFURIA.git
+git clone https://github.com/Fikdk/DesafioFURIA.git
 cd DesafioFURIA
 ### 2. Crie um ambiente virtual (caso queira):
 python -m venv venv
