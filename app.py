@@ -22,12 +22,13 @@ def responder():
     elif pergunta == "Quando a FURIA joga?":
         resposta = (
             'Você pode acompanhar toda a agenda da FURIA pelo '
-            '<a href="https://www.hltv.org/team/8297/furia#tab-matchesBox" target="_blank">HLTV </a>'
+            '<a href="https://www.hltv.org/team/8297/furia#tab-matchesBox" target="_blank">HLTV, </a>'
             '(CS2) '
-            'E a agenda da FURIA Valorant pelo '
-            '<a href="https://www.vlr.gg/matches" target="_blank">VLR.GG</a>'
+            'o calendário da FURIA de Valorant pelo '
+            '<a href="https://www.vlr.gg/matches" target="_blank">VLR.GG, </a>'
+            'e a agenda da FURIA de League of Legends pelo '
+            '<a href="https://bo3.gg/pt/lol/matches/current?team_slug=furia-esports-lol&team_id=17448&period&date=2025-05-11" target="_blank">BO3.gg</a>'
         )
-    
     elif pergunta == "Qual o site oficial da FURIA?":
         resposta = (
             'Site oficial da FURIA: '
